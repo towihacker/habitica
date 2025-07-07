@@ -2,7 +2,7 @@
   <div>
     <buy-gems-modal v-if="user" />
     <footer>
-      <!-- Product -->
+      <!-- Product
       <div class="product">
         <h3>{{ $t('footerProduct') }}</h3>
         <ul>
@@ -32,7 +32,7 @@
           </li>
         </ul>
       </div>
-      <!-- Company -->
+      <-- Company
       <div class="company">
         <h3>{{ $t('footerCompany') }}</h3>
         <ul>
@@ -62,7 +62,7 @@
           </li>
         </ul>
       </div>
-      <!-- Community -->
+      <-- Community
       <div class="community">
         <h3>{{ $t('footerCommunity') }}</h3>
         <ul>
@@ -94,7 +94,7 @@
           </li>
         </ul>
       </div>
-      <!-- Support -->
+      <-- Support
       <div class="support">
         <h3>{{ $t ('support') }}</h3>
         <ul>
@@ -133,7 +133,7 @@
           </li>
         </ul>
       </div>
-      <!-- Developers -->
+      <-- Developers
       <div class="developers">
         <h3>{{ $t('footerDevs') }}</h3>
         <ul>
@@ -161,7 +161,7 @@
         </ul>
       </div>
 
-      <!-- Help Support Habitica -->
+      <-- Help Support Habitica
       <div class="donate">
         <div>
           <h3>{{ $t('helpSupportHabitica') }}</h3>
@@ -181,7 +181,7 @@
         </button>
       </div>
 
-      <!-- Social - Desktop/Tablet -->
+      <-- Social - Desktop/Tablet 
       <div class="social">
         <div>
           <h3>{{ $t('footerSocial') }}</h3>
@@ -228,7 +228,7 @@
           </div>
         </div>
       </div>
-
+      -->
       <div class="hr">
         <div>
           <hr>

@@ -69,6 +69,7 @@
             <div
               v-for="type in columns"
               :key="type"
+              v-if="type !== 'habit' && type !== 'daily'"
               class="dropdown-item d-flex px-2 py-1"
               @click="createTask(type)"
             >

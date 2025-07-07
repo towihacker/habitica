@@ -1,5 +1,6 @@
 <template>
   <div
+    v-if="type !== 'habit' && type !== 'daily'"
     class="tasks-column"
     :class="type"
   >
@@ -11,7 +12,9 @@
       :with-pin="true"
       @change="resetItemToBuy($event)"
     />
-    <div class="d-flex align-items-center">
+    <div 
+      class="d-flex align-items-center"
+    >
       <h2 class="column-title">
         {{ $t(typeLabel) }}
       </h2>

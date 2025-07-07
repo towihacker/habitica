@@ -1,5 +1,5 @@
 <template>
-  <div class="row chat-row">
+  <!--<div class="row chat-row">
     <div class="col-12">
       <h3
         class="float-left label"
@@ -43,6 +43,7 @@
         />
       </div>
       <community-guidelines />
+      
       <div class="row chat-actions">
         <div class="col-6 chat-receive-actions">
           <button
@@ -82,7 +83,7 @@
         />
       </div>
     </div>
-  </div>
+  </div>-->
 </template>
 
 <script>
