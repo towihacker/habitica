@@ -207,6 +207,16 @@ api.createGroupPlan = {
     group.leader = user._id;
     user.guilds.push(group._id);
 
+    group.type = 'guild';
+
+    group.purchased.plan.active = true;
+    group.purchased.plan.dateUpdated = new Date();
+    group.purchased.plan.customerId = 'DEBUG_FREE_PLAN_CUSTOMER';
+    group.purchased.plan.planId = req.body.sub || 'debug_default_plan_id';
+    group.purchased.plan.extraMonths = 0;9
+    group.purchased.plan.dateTerminated = null;
+    group.purchased.plan.paymentMethod = 'Debug Bypass Create Plan';
+
     const results = await Promise.all([user.save(), group.save()]);
     const savedGroup = results[1];
 
@@ -230,7 +240,7 @@ api.createGroupPlan = {
       profile: { name: user.profile.name },
     };
 
-    if (req.body.paymentType === 'Stripe') {
+    /* if (req.body.paymentType === 'Stripe') {
       const {
         gift, sub: subKey, gemsBlock, coupon,
       } = req.body;
@@ -263,9 +273,9 @@ api.createGroupPlan = {
         groupId,
         headers,
       });
-
       res.respond(201, groupResponse);
-    }
+    } */
+    res.respond(201, groupResponse);
   },
 };
 

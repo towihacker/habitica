@@ -124,8 +124,8 @@ export const schema = new Schema({
     },
   },
   tasksOrder: {
-    habits: [{ $type: String, ref: 'Task' }],
-    dailys: [{ $type: String, ref: 'Task' }],
+    habits: [{ $type: String, ref: 'Task'}],
+    dailys: [{ $type: String, ref: 'Task'}],
     todos: [{ $type: String, ref: 'Task' }],
     rewards: [{ $type: String, ref: 'Task' }],
   },

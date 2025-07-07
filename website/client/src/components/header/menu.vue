@@ -59,6 +59,7 @@
           >
             {{ $t('tasks') }}
           </b-nav-item>
+          <!--
           <li
             class="topbar-item droppable"
             :class="{
@@ -102,6 +103,7 @@
               </router-link>
             </div>
           </li>
+          
           <li
             class="topbar-item droppable"
             :class="{
@@ -156,7 +158,7 @@
                 {{ $t('titleTimeTravelers') }}
               </router-link>
             </div>
-          </li>
+          </li> -->
           <b-nav-item
             v-if="user.party._id && user._id !== partyLeaderId"
             class="topbar-item"
@@ -273,6 +275,7 @@
               </router-link>
             </div>
           </li>
+          <!--
           <li
             class="topbar-item droppable"
             :class="{
@@ -335,7 +338,7 @@
                 target="_blank"
               >{{ $t('requestFeature') }}</a>
             </div>
-          </li>
+          </li> -->
         </b-navbar-nav>
         <div class="currency-tray form-inline">
           <div
