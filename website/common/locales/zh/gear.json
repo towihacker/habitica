@@ -3349,7 +3349,7 @@
     "shieldSpecialSummer2025RogueText": "鱿鱼触手",
     "shieldSpecialSummer2025RogueNotes": "腕足看似弱柳扶风，实则吸盘紧握——劲敌当心！力量属性提升<%= str %>点。2025年夏季限定版装备。",
     "shieldSpecialSummer2025HealerText": "海天使护盾",
-    "shieldSpecialSummer2025HealerNotes": "此盾看似简单，实则剧毒——劲敌当心。体质属性提升<%= str %>点。2025年夏季限定版装备。",
+    "shieldSpecialSummer2025HealerNotes": "此盾看似简单，实则剧毒——劲敌当心。体质属性提升<%= con %>点。2025年夏季限定版装备。",
     "shieldMystery202501Notes": "为任意户外精致披上闪烁钻石霜衣。没有属性加成。2025年1月订阅者专属物品。",
     "shieldMystery202501Text": "霜缚者法杖",
     "shieldMystery202502Notes": "情人节乃至每日，愿您心情如气球般轻盈。没有属性加成。2025年2月订阅者专属物品。",

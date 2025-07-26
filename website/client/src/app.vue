@@ -223,11 +223,10 @@ export default {
 
         const errorData = error.response.data;
         const errorMessage = errorData.message || errorData;
+        const errorCode = errorData.error;
 
-        // Check for conditions to reset the user auth
-        // TODO use a specific error like NotificationNotFound instead of checking for the string
-        const invalidUserMessage = [this.$t('invalidCredentials'), 'Missing authentication headers.'];
-        if (invalidUserMessage.indexOf(errorMessage) !== -1) {
+        // If 'invalid_credentials' signaled, force logout
+        if (error.response.status === 401 && errorCode === 'invalid_credentials') {
           this.$store.dispatch('auth:logout', { redirectToLogin: true });
           return null;
         }
@@ -269,6 +268,17 @@ export default {
     // Remove the index.html loading screen and now show the inapp loading
     const loadingScreen = document.getElementById('loading-screen');
     if (loadingScreen) document.body.removeChild(loadingScreen);
+
+    // Check if we need to show password change success message
+    if (sessionStorage.getItem('passwordChangeSuccess') === 'true') {
+      sessionStorage.removeItem('passwordChangeSuccess');
+      this.$store.dispatch('snackbars:add', {
+        title: 'Habitica',
+        text: this.$t('passwordSuccess'),
+        type: 'success',
+        timeout: true,
+      });
+    }
 
     this.$router.onReady(() => {
       if (this.isStaticPage || !this.isUserLoggedIn) {

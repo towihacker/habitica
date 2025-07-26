@@ -3342,5 +3342,18 @@
     "armorSpecialSummer2025MageNotes": "Dieser Anzug hat nicht nur atemberaubende Farben, sondern ermöglicht dir auch, anmutig durch's Wasser zu gleiten. Schwimmen oder Tanzen - du hast die Wahl! Erhöht Intelligenz um <%= int %>. Limitierte Ausgabe Sommerausrüstung 2025.",
     "armorArmoireBeekeepersSuitText": "Imkeranzug",
     "armorArmoireBeekeepersSuitNotes": "Schütze dich, während du nach deinen fleißigen Hummeln schaust. Erhöht Ausdauer um <%= con %>. Verzauberter Schrank: Imker Set (Gegenstand 2 von 4)",
-    "headSpecialSummer2025RogueNotes": "Deiner Sehkraft wird sich verbessern sobald Du diese Maske aufsetzt. Erhöht Wahrnehmung um <%= per %>."
+    "headSpecialSummer2025RogueNotes": "Deine Sehkraft wird sich verbessern, sobald Du diese Maske aufsetzt. Erhöht Wahrnehmung um <%= per %>. Limitierte Ausgabe Sommerausrüstung 2025.",
+    "weaponSpecialSummer2025MageText": "Zweigkoralle",
+    "weaponSpecialSummer2025MageNotes": "Verzweige dich mit deinen Talenten und Fähigkeiten, um eine Reihe von verschiedenen Aufgaben anzugreifen. Erhöht Intelligenz um <%= int %> und Wahrnehmung um <%= per %>. Limitierte Ausgabe Sommerausrüstung 2025",
+    "headSpecialSummer2025WarriorText": "Jakobsmuschel Helm",
+    "headSpecialSummer2025WarriorNotes": "Undurchdringlich und perfekt zugespitzt wird dich dieser Helm sogar vor Seesternen beschützen. Erhöht Stärke um <%= str %>. Limitierte Ausgabe Sommerausrüstung 2025.",
+    "headSpecialSummer2025RogueText": "Tintenfischmaske",
+    "headSpecialSummer2025HealerText": "Ruderschnecken Helm",
+    "headSpecialSummer2025HealerNotes": "Glückwunsch, jetzt bist du ein Seeschmetterling. Erhöht Intelligenz um <%= int %>. Limitierte Ausgabe Sommerausrüstung 2025.",
+    "headSpecialSummer2025MageText": "Feenlippfisch Kopfschmuck",
+    "headSpecialSummer2025MageNotes": "Alle werden davon hypnotisiert sein, wie sich deine Flossen mit der Strömung bewegen. Erhöht Wahrnehmung um <%= per %>. Limitierte Ausgabe Sommerausrüstung 2025.",
+    "headMystery202507Notes": "Umgedrehte Mützen sind immer noch cool, oder? Gewährt keinen Attributbonus. Juli 2025 Abonnentengegenstand.",
+    "headMystery202507Text": "Draufgängerische Skater Mütze",
+    "armorArmoireFlyFishingWadersText": "Fliegenfischerhose",
+    "armorArmoireFlyFishingWadersNotes": "Halte dich vollkommen warm und trocken, wenn du in einen Bach, Teich, See oder Fluß watest. Erhöht Stärke und Ausdauer um jeweils <%= attrs %>. Verzauberter Schrank: Fliegenfischer Set (Gegenstand 2 von 3)"
 }

@@ -1772,5 +1772,6 @@
     "eyewearArmoireComedyMaskText": "Komediowa Maska",
     "eyewearArmoireJewelersEyeLoupeText": "Lupa Jubilerska",
     "moreArmoireGearAvailable": "Do tego czasu, zostało do znalezienia <%= armoireCount %> części wyposażenia w Zaczarowanej Skrzyni!",
-    "gearItemsCompleted": "Jesteś w posiadaniu całego ekwipunku klasy <%= class %>! Nowy ekwipunek jest wydawany podczas Gal sezonowych."
+    "gearItemsCompleted": "Jesteś w posiadaniu całego ekwipunku klasy <%= class %>! Nowy ekwipunek jest wydawany podczas Gal sezonowych.",
+    "moreArmoireGearComing": "Zaczarowana Skrzynia również comiesięcznie otrzymuje nowy asortyment!"
 }
