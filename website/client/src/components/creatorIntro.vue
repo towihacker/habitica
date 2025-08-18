@@ -303,134 +303,7 @@
         <customize-banner class="padding-fix" />
       </div>
     </div>
-    <div
-      v-if="modalPage === 3 && !editing"
-      class="container interests-section"
-    >
-      <div class="section row">
-        <div class="col-12 text-center">
-          <h2>{{ $t('wantToWorkOn') }}</h2>
-        </div>
-      </div>
-      <div class="section row">
-        <div class="col-6">
-          <div class="task-option">
-            <div class="custom-control custom-checkbox">
-              <input
-                id="work"
-                v-model="taskCategories"
-                class="custom-control-input"
-                type="checkbox"
-                value="work"
-              >
-              <label
-                v-once
-                class="custom-control-label"
-                for="work"
-              >{{ $t('work') }}</label>
-            </div>
-          </div>
-          <div class="task-option">
-            <div class="custom-control custom-checkbox">
-              <input
-                id="exercise"
-                v-model="taskCategories"
-                class="custom-control-input"
-                type="checkbox"
-                value="exercise"
-              >
-              <label
-                v-once
-                class="custom-control-label"
-                for="exercise"
-              >{{ $t('exercise') }}</label>
-            </div>
-          </div>
-          <div class="task-option">
-            <div class="custom-control custom-checkbox">
-              <input
-                id="health_wellness"
-                v-model="taskCategories"
-                class="custom-control-input"
-                type="checkbox"
-                value="health_wellness"
-              >
-              <label
-                v-once
-                class="custom-control-label"
-                for="health_wellness"
-              >{{ $t('health_wellness') }}</label>
-            </div>
-          </div>
-          <div class="task-option">
-            <div class="custom-control custom-checkbox">
-              <input
-                id="school"
-                v-model="taskCategories"
-                class="custom-control-input"
-                type="checkbox"
-                value="school"
-              >
-              <label
-                v-once
-                class="custom-control-label"
-                for="school"
-              >{{ $t('school') }}</label>
-            </div>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="task-option">
-            <div class="custom-control custom-checkbox">
-              <input
-                id="chores"
-                v-model="taskCategories"
-                class="custom-control-input"
-                type="checkbox"
-                value="chores"
-              >
-              <label
-                v-once
-                class="custom-control-label"
-                for="chores"
-              >{{ $t('chores') }}</label>
-            </div>
-          </div>
-          <div class="task-option">
-            <div class="custom-control custom-checkbox">
-              <input
-                id="creativity"
-                v-model="taskCategories"
-                class="custom-control-input"
-                type="checkbox"
-                value="creativity"
-              >
-              <label
-                v-once
-                class="custom-control-label"
-                for="creativity"
-              >{{ $t('creativity') }}</label>
-            </div>
-          </div>
-          <div class="task-option">
-            <div class="custom-control custom-checkbox">
-              <input
-                id="self_care"
-                v-model="taskCategories"
-                class="custom-control-input"
-                type="checkbox"
-                value="self_care"
-              >
-              <label
-                v-once
-                class="custom-control-label"
-                for="self_care"
-              >{{ $t('self_care') }}</label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <div
       v-if="!editing"
       class="section d-flex justify-content-center justin-outer-section"
@@ -527,14 +400,10 @@
           class="circle"
           :class="{active: modalPage === 2}"
         ></div>
-        <div
-          class="circle"
-          :class="{active: modalPage === 3}"
-        ></div>
       </div>
       <div class="footer-right">
         <div
-          v-if="modalPage < 3"
+          v-if="modalPage < 2"
           class="next-outer"
           @click="next()"
         >
@@ -550,7 +419,7 @@
           ></div>
         </div>
         <div
-          v-if="modalPage === 3 && !loading"
+          v-if="modalPage === 2 && !loading"
           class="next-outer"
           :class="{disabled: taskCategories.length === 0}"
           @click="done()"
